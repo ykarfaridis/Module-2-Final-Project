@@ -15,6 +15,25 @@ body {
 
 button{
     cursor: pointer;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+h1{
+    font-size: 48px;
+    color: rgb(26,32,44);
+    line-height: 1.25;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.img{
+    width: 100%;
 }
 
 .row {
@@ -223,6 +242,81 @@ header .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__description{
+    width: 40%;
+}
+
+.header__description--para{
+    margin: 32px 0;
+}
+
+.header__email{
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__email--input{
+    width: 100%;
+    color: rgb(36,62,99);
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1;
+    border-radius: 500px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(229, 231, 235);
+    border-image: initial;
+    padding: 20px 192px 20px 32px;
+    transition: border-color 300ms;
+}
+
+.header__email--btn{
+    z-index: 2;
+    height: calc(100% - 16px);
+    width: 160px;
+    background-color: #6415ff;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 8px;
+    border-radius: 500px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    transition: 300ms ease;
+}
+
+.header__customers--title{
+    margin-top: 80px;
+    color: #a0aec0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6;
+}
+
+.header__customers{
+    margin-top: 16px;
+    padding-right: 128px;
+    opacity: 0.5;
+}
+
+.header__img--wrapper{
+    width: calc(100% - 40%);
+}
+
+.header__img{
+    width: 100%;
 }
 
 /* 
