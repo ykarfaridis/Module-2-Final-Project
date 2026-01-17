@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+button{
+    cursor: pointer;
+}
+
 .row {
   width: 100%;
   max-width: 1280px;
