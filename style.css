@@ -1161,6 +1161,15 @@ opacity: 0.5;
   width: 16px;
 }
 
+.YK__logo--wrapper{
+  position: relative;
+}
+
+.YK__logo{
+  height: 120px;
+  width: 100px;
+}
+
 /* 
 
 MOBILE RESPONSIVENESS ↓
