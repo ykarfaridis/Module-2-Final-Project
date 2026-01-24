@@ -12,6 +12,10 @@ img{
   color: hsl(32, 62, 99);
 }
 
+html{
+scroll-behavior: smooth
+}
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -62,6 +66,10 @@ section {
 
 main {
   margin-bottom: 96px;
+}
+
+.btn:hover{
+  background-color: rgba(80, 17, 204);
 }
 
 /* 
@@ -119,20 +127,19 @@ nav {
   color: #243e63;
 }
 
-.nav__link::after {
+.nav__link:after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -6px;
   height: 2px;
-  width: 0;
+  width:100%;
   opacity: 0;
   background-color: #6415ff;
-  transition: all 0.25s ease-out;
+  transition: all 300ms ease;
 }
 
-.nav__link:hover::after {
-  width: 100%;
+.nav__link:hover:after {
   opacity: 1;
 }
 
@@ -145,18 +152,30 @@ nav {
 }
 
 .nav__link--primary {
-  color: rgb(255, 255, 255);
-  background-color: rgb(100, 21, 255);
-  line-height: 1.5;
-  width: auto;
-  margin: 2px 0px 0px;
+  margin: 0;
   padding: 10px 32px;
+  margin-top: 2px;
   border-radius: 9999px;
-  border-width: initial;
-  border-style: none;
-  border-color: initial;
-  border-image: initial;
-  transform: 300ms;
+  color: #fff;
+  background-color: #6415ff;
+  line-height: 1.5;
+  border: none;
+  width: auto;
+  transition: all 300ms ease;
+}
+
+.nav__link--primary:after {
+  content: "";
+  width: 0;
+  height: 0;
+}
+.nav__link--primary:hover {
+  background-color: rgba(80, 17, 204);
+  color: white;
+}
+
+.login {
+  margin-left: 48px;
 }
 
 a {
@@ -220,7 +239,7 @@ a {
   border: none;
 }
 
-.menu--open .modal {
+.modal--open .modal {
   visibility: visible;
   opacity: 1;
   transform: translateX(0);
@@ -280,6 +299,20 @@ header .row {
     transition: border-color 300ms;
 }
 
+.header__email--input::placeholder{
+  font-weight: 500;
+  color: rgb(158,170,189);
+}
+
+.header__email--input:hover{
+  border-color: rgba(160,174,192);
+}
+
+.header__email--input:focus,
+.header__email--input:active{
+  outline: none;
+  border-color: rbga(100, 21, 255);
+}
 .header__email--btn{
     z-index: 2;
     height: calc(100% - 16px);
@@ -297,6 +330,9 @@ header .row {
     transition: 300ms ease;
 }
 
+.header__email--btn:hover{
+  background-color: rgba(60,13,153);
+}
 .header__customers--title{
     margin-top: 80px;
     color: #a0aec0;
